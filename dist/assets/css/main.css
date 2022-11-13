@@ -8406,7 +8406,7 @@ progress {
 /* ==> Start Sidebar <==*/
 .sidebar {
   width: 250px;
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   top: 0;
   left: -100%;
@@ -8466,6 +8466,17 @@ progress {
 }
 .orders-info .row .col-sm-4:nth-child(3) .card::before {
   content: "\eea7";
+}
+
+.overview *::first-letter {
+  text-transform: uppercase;
+}
+.overview .inbox-item:not(:last-child), .overview .activity-item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.overview #salesChart {
+  width: 100%;
+  min-height: 200px;
 }
 
 /* ==> End Main <==*/
