@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="bg-light">
+    <!-- container-fluid -->
+    <div class="container-fluid p-0 overflow-hidden">
+      <div class="row m-0 p-0 flex-nowrap">
+        <!-- Sidebar -->
+        <div class="sidebar bg-white shadow expand">
+          <nav class="navbar">
+            <!-- container-fluid -->
+            <div class="container-fluid p-0">
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <a href="index.html" class="navbar-brand m-0">D9I9A SHOP</a>
+                <div>
+                  <button
+                    role="button"
+                    aria-label="close sidebar"
+                    class="btn d-lg-none"
+                    id="close-sidebar"
+                  >
+                    <i class="bx bx-menu-alt-left bx-md"></i>
+                  </button>
+
+                  <button
+                    role="button"
+                    aria-label="close sidebar"
+                    class="btn d-none d-lg-block ps-0"
+                    id="expand-sidebar"
+                  >
+                    <i class="bx bx-menu-alt-right bx-md"></i>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="navbar-nav m-0 p-0 text-capitalize w-100">
+                <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link active d-flex align-items-center gap-2 p-2 shadow-sm"
+                  >
+                    <i class="bx bxs-dashboard fs-4"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!-- ./nav-item -->
+
+                <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link d-flex align-items-center gap-2 p-2"
+                  >
+                    <i class="bx bxs-cart-add fs-4"></i>
+                    <span>orders</span>
+                  </a>
+                </li>
+                <!-- ./nav-item -->
+
+                <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link d-flex align-items-center gap-2 p-2"
+                  >
+                    <i class="bx bxs-t-shirt fs-4"></i>
+                    <span>Products</span>
+                  </a>
+                </li>
+                <!-- ./nav-item -->
+
+                <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link d-flex align-items-center gap-2 p-2"
+                  >
+                    <i class="bx bxs-package fs-4"></i>
+                    <span>shipping</span>
+                  </a>
+                </li>
+                <!-- ./nav-item -->
+
+                <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link d-flex align-items-center gap-2 p-2"
+                  >
+                    <i class="bx bxs-credit-card fs-4"></i>
+                    <span>payments</span>
+                  </a>
+                </li>
+                <!-- ./nav-item -->
+
+                <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link d-flex align-items-center gap-2 p-2"
+                  >
+                    <i class="bx bxs-cog fs-4"></i>
+                    <span>settings</span>
+                  </a>
+                </li>
+                <!-- ./nav-item -->
+              </ul>
+            </div>
+            <!-- ./container-fluid -->
+          </nav>
+          <!-- ./Nav -->
+        </div>
+        <!-- ./Sidebar -->
+
+        <!-- Main -->
+        <main>
+          <!-- Navbar -->
+          <nav class="navbar text-capitalize">
+            <div class="container-fluid">
+              <div class="row flex-grow-1 justify-content-between">
+                <div class="col-2 col-md-3 d-lg-none">
+                  <!-- Brand -->
+                  <div
+                    class="d-flex align-items-center h-100 justify-content-between"
+                  >
+                    <a
+                      class="navbar-brand d-none d-sm-inline-block"
+                      href="index.html"
+                      >D9I9A SHOP</a
+                    >
+                    <button
+                      role="button"
+                      aria-label="collapse sidebar"
+                      class="btn btn-sm border-0"
+                      id="open-sidebar"
+                    >
+                      <i class="bx bx-menu-alt-right bx-md"></i>
+                    </button>
+                  </div>
+                  <!-- ./Brand -->
+                </div>
+                <!-- ./col -->
+                <div class="col-auto order-last order-md-0">
+                  <!-- Start Total Revenue -->
+                  <div class="total-revenue">
+                    <p class="opacity-50 fs-6 fw-normal m-0 p-0">
+                      Total Revenue
+                    </p>
+                    <span class="fw-semibold fs-3">&dollar;45,046.08</span>
+
+                    <span class="text-danger">
+                      <i class="bx bxs-down-arrow text-danger"></i>
+                      <small>12.5 &percnt;</small>
+                    </span>
+
+                    <span class="text-success">
+                      <i class="bx bxs-up-arrow text-success"></i>
+                      <small>10.5 &percnt;</small>
+                    </span>
+                  </div>
+
+                  <!-- ./Total Revenue -->
+                </div>
+                <!-- ./col -->
+                <div class="col-10 col-md-4 col-lg-5 col-xl-6">
+                  <!-- Nav Links -->
+                  <ul
+                    class="navbar-nav d-flex flex-row w-100 justify-content-end gap-4 gap-lg-3 align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" aria-label="search">
+                        <i class="bx bx-search bx-sm text-primary"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link position-relative"
+                        aria-label="messages"
+                      >
+                        <i class="bx bxs-message bx-sm text-primary"></i>
+                        <span
+                          class="position-absolute translate-middle p-1 bg-danger border border-light rounded-circle"
+                        >
+                          <span class="visually-hidden">New alerts</span>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        class="nav-link position-relative"
+                        aria-label="notifications"
+                      >
+                        <i class="bx bxs-bell bx-sm text-primary"></i>
+                        <span
+                          class="position-absolute start-100 translate-middle p-1 bg-danger border border-light rounded-circle"
+                        >
+                          <span class="visually-hidden">New alerts</span>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" aria-label="user profile ">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/images/Max-R_Headshot (1).jpg"
+                          alt="user profile image"
+                          width="50"
+                          height="50"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- ./Nav Links -->
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- ./row -->
+            </div>
+            <!-- ./container-fluid -->
+          </nav>
+          <!-- ./Navbar -->
+          <div class="content">
+            <div class="container-fluid">
+              <!-- Orders-info -->
+              <div class="orders-info text-white mt-lg-4 mt-3">
+                <div class="row justify-content-between text-capitalize gy-3">
+                  <div class="col-sm-4">
+                    <div class="card border-0 p-3">
+                      <h2 class="h6 m-0 fw-bold">shipping orders</h2>
+                      <span class="fw-bold text-end m-0">67</span>
+                    </div>
+                  </div>
+                  <!-- ./card -->
+                  <div class="col-sm-4">
+                    <div class="card border-0 p-3">
+                      <h2 class="h6 m-0 fw-bold">pending orders</h2>
+                      <span class="fw-bold text-end m-0">09</span>
+                    </div>
+                  </div>
+                  <!-- ./card -->
+                  <div class="col-sm-4">
+                    <div class="card border-0 p-3">
+                      <h2 class="h6 m-0 fw-bold">new orders</h2>
+                      <span class="fw-bold text-end m-0">35</span>
+                    </div>
+                  </div>
+                  <!-- ./card -->
+                </div>
+              </div>
+              <!-- ./Orders-info -->
+
+              <!-- Overview -->
+              <div class="overview mt-lg-4 mt-3">
+                <div class="row">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <!-- Inbox -->
+                    <div class="card border-0 shadow-sm mb-3 mb-lg-4">
+                      <div
+                        class="card-header bg-transparent d-flex justify-content-between border-0 text-capitalize p-3"
+                      >
+                        <div class="mb-3">
+                          <h3 class="m-0">inbox</h3>
+                          <small class="text-black-50">group support</small>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-primary text-decoration-none fw-semibold"
+                        >
+                          view details
+                        </a>
+                      </div>
+                      <div class="card-body p-0">
+                        <div
+                          class="inbox-item d-flex justify-content-between p-3"
+                        >
+                          <p class="m-0">waiting for order #21436</p>
+                          <span class="text-black-50">04:20 PM</span>
+                        </div>
+
+                        <div
+                          class="inbox-item d-flex justify-content-between p-3"
+                        >
+                          <p class="m-0">customer support #31436</p>
+                          <span class="text-black-50">1d 3h </span>
+                        </div>
+
+                        <div
+                          class="inbox-item d-flex justify-content-between p-3"
+                        >
+                          <p class="m-0">waiting for order #21436</p>
+                          <span class="text-black-50">04:20 PM</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ./Inbox -->
+
+                    <!-- Recent Activity -->
+                    <div class="card border-0 shadow-sm mb-3 mb-lg-4">
+                      <div
+                        class="card-header bg-transparent d-flex justify-content-between border-0 text-capitalize p-3"
+                      >
+                        <div class="mb-3">
+                          <h3 class="m-0">Recent Activity</h3>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-primary text-decoration-none fw-semibold"
+                        >
+                          view all
+                        </a>
+                      </div>
+                      <div class="card-body p-0">
+                        <div
+                          class="activity-item d-flex gap-2 p-3 align-items-center"
+                        >
+                          <i class="bx bxs-check-circle text-primary"></i>
+                          <p class="m-0">confirm order update</p>
+                          <span
+                            class="tag text-white bg-warning rounded-2 px-2 py-0 ms-auto"
+                            >urgent</span
+                          >
+                        </div>
+                        <!-- ./activity-item -->
+
+                        <div
+                          class="activity-item d-flex gap-2 p-3 align-items-center"
+                        >
+                          <i class="bx bxs-circle text-danger"></i>
+                          <p class="m-0">finish shipping update</p>
+                          <span
+                            class="tag text-white bg-warning rounded-2 px-2 py-0 ms-auto"
+                            >urgent</span
+                          >
+                        </div>
+                        <!-- ./activity-item -->
+
+                        <div
+                          class="activity-item d-flex gap-2 p-3 align-items-center"
+                        >
+                          <i class="bx bx-circle text-black-50"></i>
+                          <p class="m-0">create new order</p>
+                          <span
+                            class="tag text-white bg-success rounded-2 px-2 py-0 ms-auto"
+                            >new</span
+                          >
+                        </div>
+                        <!-- ./activity-item -->
+
+                        <div
+                          class="activity-item d-flex gap-2 p-3 align-items-center"
+                        >
+                          <i class="bx bxs-check-circle text-primary"></i>
+                          <p class="m-0">update payment report</p>
+                          <span
+                            class="tag text-black-50 bg-light rounded-2 px-2 py-0 ms-auto"
+                            >default</span
+                          >
+                        </div>
+                        <!-- ./activity-item -->
+                      </div>
+                    </div>
+                    <!-- ./Recent Activity -->
+                  </div>
+                  <!-- ./col-md-6 -->
+                  <div class="col-md-6">
+                    <!-- Chart last 7 days sales -->
+                    <div class="card border-0 shadow-sm p-3">
+                      <canvas
+                        id="salesChart"
+                        aria-label="chart sales for last 7 days"
+                        role="img"
+                      ></canvas>
+                    </div>
+                  </div>
+                  <!-- ./col-md-6 -->
+                </div>
+                <!-- ./row -->
+              </div>
+              <!-- ./Overview -->
+            </div>
+            <!-- ./container-fluid -->
+          </div>
+          <!-- ./content -->
+        </main>
+        <!-- ./Main -->
+      </div>
+    </div>
+    <!-- ./container-fluid -->
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+
+
+/* ==> Custom Bootstrap <==*/
+.navbar{
+  
+  // --bs-navbar-active-color: rgba($info, 100%);
+
+  .nav-item:nth-child(2) .nav-link i~span{
+    top: 22% !important;
+    left: 80% !important;
+  }
+
+  .nav-item:nth-child(3) .nav-link i~span{
+    top: 22% !important;
+    left: 65% !important;
+  }
+}
+
+/* ==> End Custom Bootstrap <==*/
+
+/* ==> Start Sidebar <==*/
+.sidebar{
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+  
+  &.open{
+    animation: to-left .3s ease both;
+  }
+
+  .navbar-nav{
+    & .nav-link{
+      &.active, &:hover{
+      border-radius: 12px;
+      background-color: $active-bg-link;
+      }
+    }
+  }
+}
+/* ==> End Sidebar <==*/
+
+
+/* ==> Start Main <==*/
+.sidebar ~ main{
+  width: 100vw;
+}
+
+// navbar
+.total-revenue{
+  .text-danger{
+    color: $down-color !important;
+  }
+
+  .text-success {
+    color: $up-color !important;
+  }
+}
+
+// Orders Info
+
+.orders-info{
+  .card > span{
+    font-size: 2.5rem;
+  }
+  .row{
+    .col-sm-4{
+      .card{
+        &::before{
+          position: absolute;
+          top: 25%;
+          left: 30%;
+          font-family: boxicons !important;
+          font-size: 8rem;
+          color: rgba($color: #FFFFFF, $alpha: 0.2);
+          transform: rotateZ(-28deg) translate(-50%, -50%);
+        }
+      }
+
+      &:nth-child(1) .card{
+        position: relative;
+        background-color: #6BAAFC;
+        background-image: linear-gradient(160deg, #6BAAFC 0%, #305FEC 100%);
+        &::before {
+          content: "\eed8";
+        }
+      }
+  
+      &:nth-child(2) .card{
+        background-color: #EF5E7A;
+        background-image: linear-gradient(160deg, #EF5E7A 0%, #D35385 100%);
+        &::before {
+          content: "\ed24";
+          // position: absolute;
+          // top: 40%;
+          // left: 30%;
+          // font-family: boxicons !important;
+          // font-size: 6rem;
+          // color: rgba($color: #FFFFFF, $alpha: 0.2);
+          // transform:rotateZ(-28deg) translate(-50%, -50%);
+        }
+      }
+  
+      &:nth-child(3) .card{
+        background-color: #D623FE;
+        background-image: linear-gradient(160deg, #D623FE 0%, #A530F2 100%);
+        &::before {
+          content: "\eea7";
+          // position: absolute;
+          // top: 40%;
+          // left: 30%;
+          // font-family: boxicons !important;
+          // font-size: 6rem;
+          // color: rgba($color: #FFFFFF, $alpha: 0.2);
+          // transform: rotateZ(-28deg) translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+// Overview
+.overview{
+  & *::first-letter{
+    text-transform: uppercase;
+  }
+
+  .inbox-item:not(:last-child), .activity-item:not(:last-child){
+    border-bottom: 1px solid rgba($color: #000, $alpha: 0.1);
+  }
+
+  #salesChart{
+    width: 100%;
+    min-height: 200px;
+  }
+}
+/* ==> End Main <==*/
+
+/* ==> Start Media Query <==*/
+@include media-breakpoint-up(lg){
+
+  .sidebar {
+    position: relative;
+    width: 65px;
+    left: 0;
+    overflow-x: hidden;
+    // transition: width .1s ease-in-out;
+
+    .navbar-brand, .navbar-nav .nav-link span {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+    .navbar-brand {
+      width: 0;
+    }
+    &.expand{
+      width : 250px;
+      .navbar-brand, .navbar-nav .nav-link span{
+        opacity: 1;
+        pointer-events: initial;
+        
+      }
+    }
+  }
+
+  .sidebar.expand~main {
+      width: calc(100vw - 250px);
+      // min-width: calc(100vw - 250px);
+      // width: auto;
+      
+  }
+
+  .sidebar~main {
+    // min-width: calc(100vw - 65px);
+    width: calc(100vw - 65px);
+    // width: auto;
+  }
+}
+/* ==> End Media Query <==*/
+
+
+/* ==> Start Keyframe <==*/
+// sidebar
+@keyframes to-left{
+  to{
+    left: 0;
+  }
+}
+/* ==> End Keyframe <==*/
