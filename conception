@@ -1,0 +1,34 @@
+Admin Dashboard + Store 
+
+
+Admin Dashboard
+-login page
+-home dashboard page (containt main data analytics)
+-order(all order / new order / cancelled order)
+-product(all product / New product / Categories / Reviews Inventory)
+-up sells(all up sells/ new up sells)
+-coupons(all coupons / new coupons)
+-customers(all customers / new customers)
+-team(all team / new moderator)
+-insights
+-setting
+
+
+Store
+-login/register page
+-home page
+-user dashboard
+-product page
+-basket page
+-checkout page
+
+
+Database
+-user table
+-product table
+-coupons table
+-review table
+-orders table
+-up selles table
+
+

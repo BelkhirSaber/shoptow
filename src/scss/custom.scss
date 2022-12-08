@@ -131,9 +131,13 @@
     border-bottom: 1px solid rgba($color: #000, $alpha: 0.1);
   }
 
+
+  // .chart-content .card{
+  //   min-height: 400px !important;
+  // }
   #salesChart{
-    width: 100%;
-    min-height: 200px;
+    // width: 100%;
+    // min-height: 10vh !important;
   }
 }
 /* ==> End Main <==*/
